@@ -1,4 +1,4 @@
-import { Component, OnInit, SkipSelf } from '@angular/core';
+import { Component, SkipSelf } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { AddPaymentModalComponent } from '../modals/add-payment/add-payment-modal.component';
 

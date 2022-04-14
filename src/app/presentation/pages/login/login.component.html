@@ -6,12 +6,12 @@
   <div class="l-content__area__form">
     <div class="l-content__area__form__inputs">
       <div class="l-content__area__form__inputs__content">
-        <div class="l-content__area__form__inputs__content__title">
+        <section class="l-content__area__form__inputs__content__title">
           <h3>
             <span transloco="pay"></span> <span transloco="friends"></span>
           </h3>
           <h2 transloco="title"></h2>
-        </div>
+        </section>
         <div class="l-content__area__form__inputs__content__align__items">
           <form
             [formGroup]="this.form"
@@ -39,7 +39,7 @@
               />
             </mat-form-field>
             <button
-              [disabled]="this.form.invalid  || this.loading"
+              [disabled]="this.form.invalid || this.loading"
               mat-raised-button
               color="primary"
             >

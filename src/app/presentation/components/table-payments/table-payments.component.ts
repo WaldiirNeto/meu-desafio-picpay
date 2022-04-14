@@ -18,7 +18,7 @@ export class TablePaymentsComponent implements OnInit {
   public lastOrderBy = 'id';
 
   public displayedColumns: string[] = [
-    'name',
+
     'title',
     'date',
     'value',

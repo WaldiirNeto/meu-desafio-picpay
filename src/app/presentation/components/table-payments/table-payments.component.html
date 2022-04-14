@@ -27,17 +27,6 @@
               </app-sort-table>
             </div>
           </th>
-          <td mat-cell *matCellDef="let element">
-            <div class="content-column">
-              <div><img class="avatar" [src]="element.image" /></div>
-              <div class="content-column__img">
-                <div>{{ element.name }}</div>
-                <div class="content-column__username_color">
-                  @{{ element.username }}
-                </div>
-              </div>
-            </div>
-          </td>
         </ng-container>
 
         <ng-container matColumnDef="title">

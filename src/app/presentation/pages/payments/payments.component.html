@@ -1,22 +1,22 @@
-<div class="p-content">
+<section class="p-content">
   <mat-toolbar color="primary">
-    <!-- <div class="p-content__mat-toolbar"> -->
-    <h1 transloco="payments.title"></h1>
-    <button mat-button [matMenuTriggerFor]="menu">Menu</button>
-    <mat-menu #menu="matMenu">
-      <button
-        mat-menu-item
-        transloco="logout"
-        (click)="this.removeItem()"
-      ></button>
-    </mat-menu>
-    <!-- </div> -->
+    <section>
+      <h1 transloco="payments.title"></h1>
+      <button mat-button [matMenuTriggerFor]="menu">Menu</button>
+      <mat-menu #menu="matMenu">
+        <button
+          mat-menu-item
+          transloco="logout"
+          (click)="this.removeItem()"
+        ></button>
+      </mat-menu>
+    </section>
   </mat-toolbar>
   <div class="p-content__table">
-    <div class="p-content__table__title">
+    <section class="p-content__table__title">
       <h1 transloco="payments.table.title"></h1>
       <app-add-payment></app-add-payment>
-    </div>
+    </section>
     <app-table-payments></app-table-payments>
   </div>
-</div>
+</section>

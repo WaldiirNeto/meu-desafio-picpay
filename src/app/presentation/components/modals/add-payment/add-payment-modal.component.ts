@@ -41,10 +41,6 @@ export class AddPaymentModalComponent
   }
   public onSave(): void {
     this._loading = true;
-    this.form.controls.username.setValue('username');
-    this.form.controls.image.setValue(
-      'https://robohash.org/asperioresprovidentconsequuntur.png?size=150x150&set=set1'
-    );
     this.paymentsService
       .addPayment(this.form.value)
       .pipe(
